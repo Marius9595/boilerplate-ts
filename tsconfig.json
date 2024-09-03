@@ -1,19 +1,23 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "jsx": "react",
-        "noImplicitAny": false,
-        "sourceMap": true, 
-        "outDir":"./lib/"
-    },
-    "include": [
-        "src/**/*"
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es6"
     ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts",
-        "**/*.test.ts"
+    "declaration": true,
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "strict": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "dist"
     ]
 }
